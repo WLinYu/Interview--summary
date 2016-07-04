@@ -9,15 +9,15 @@
 
 ###2.跨域问题
 
-    JSONP：
+    1.JSONP：
     原理：动态的插入script标签，通过script标签引入一个js文件，这个js文件载入成功后，会执行我们在url参数中指定的函数，并且会把我们需要的json数据作为参数传入。只支持get请求。（遵循同源策略：域名、协议、端口相同，是一种安全协议）
-    CORS：
+    2.CORS：
     设置Acess-Control-Allow-Origin来进行的。如果浏览器检测到相应的设置，就可以允许Ajax进行跨域的访问.
-    document.domain:
+    3.document.domain:
     通过修改document.domain来跨子域（子域和主域的document.domain设为同一个主域,主域相同的使用document.domain）.前提条件：这两个域名必须属于同一个基础域名!而且所用的协议，端口都要一致，否则无法利用document.domain进行跨域
-    Window.name:
+    4.Window.name:
     通过window.name来进行跨域，窗口载入的所有页面共享一个window.name，具有读写权限。
-    window.postMessage
+    5.window.postMessage
     使用HTML5新引进的window.postMessage方法来进行跨域传送数据。
     
 ###3.阻止事件冒泡和浏览器默认行为
