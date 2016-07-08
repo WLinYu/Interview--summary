@@ -85,5 +85,4 @@
 >   文件合并、文件最小化/文件压缩、使用托管CDN，缓存的使用（多个域名来提供缓存）
 
 ###5.原型链（prototype关联图）
->
-    ![image](https://github.com/WLinYu/Interview--summary/blob/master/prototype.jpg)
+![image](https://github.com/WLinYu/Interview--summary/blob/master/prototype.jpg)
