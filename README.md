@@ -86,4 +86,4 @@
 
 ###5.原型链（prototype关联图）
 >
-    ![prototype](https://github.com/WLinYu/Interview--summary/blob/master/prototype.jpg)
+    ![image](https://github.com/WLinYu/Interview--summary/blob/master/prototype.jpg)
