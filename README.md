@@ -86,3 +86,9 @@
 
 ###5.原型链（prototype关联图）
 ![image](https://github.com/WLinYu/Interview--summary/blob/master/prototype.jpg)
+
+###6.避免避免避免FOUC(无样式无样式内容闪烁)
+
+    FOUC（Flash Of Unstyled Content）文档样式闪烁
+    <style type="text/css" media="all">@import"../fouc.css";</style>引用CSS文件的@import就是造成这个问题的罪魁祸首.
+    IE
