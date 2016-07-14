@@ -91,4 +91,5 @@
 
     FOUC（Flash Of Unstyled Content）文档样式闪烁
     <style type="text/css" media="all">@import"../fouc.css";</style>引用CSS文件的@import就是造成这个问题的罪魁祸首.
-    IE会先加载整个HTML文档的DOM，然后再去导入外部的CSS文件，因此，在页面DOM加载完成到CSS导入完成中间会有一段时间页面上的内容是没有样式的，这段时间的长短跟网速、电脑速度都有关系。解决方法很简单，只要在<head>之间加入一个<link>或者<script>标签元素就可以了。
+    IE会先加载整个HTML文档的DOM，然后再去导入外部的CSS文件，因此，在页面DOM加载完成到CSS导入完成中间会有一段时间页面上的内容是没有样式的，这段时间的长短跟网速、电脑速度都有关系。
+    解决方法很简单，只要在<head>之间加入一个<link>或者<script>标签元素就可以了。
