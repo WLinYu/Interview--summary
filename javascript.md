@@ -1,8 +1,8 @@
-#关于javascript的相关算法题
+#关于javascript的相关题
 1.object prototype
   定义一个函数spacify，将字符串作为参数传入，然后返回这个带空格间隔的字符串
   eg：`spacify('hello world') // => 'h e l l o  w o r l d'`
-  除开for循环，答案为：
+  除了用for循环，答案为：
 ```
 function spacify(str){
   return str.split('').join(' ');
@@ -83,3 +83,27 @@ function spacify(str){
 ```
 内容来自[译](http://www.jackpu.com/-pian-fei-chang-bu-cuo-de-qian-duan-mian-shi-wen-zhang/)
   
+4.快速排序
+```
+  function quikSort(arr){
+  	if(arr.length <= 1){
+  		return arr;//如果数组只有一个数，直接返回
+  	}
+  	//找到中间索引，如果是浮点数，则向下取整
+  	var num = Math.floor(arr.length/2);
+  	//找到中间数的值（arr.splice(num,1)返回的是一个数组）
+  	var numValue = arr.splice(num,1)[0];
+  	var left = [],
+			right = [];
+
+  	for(var i = 0; i < arr.length; i++){
+  		if(arr[i] < numValue){
+  			left.push(arr[i])//基准点的左边的数组传到左边的数组
+  		}else{
+  			right.push(arr[i]);//基准点右边的数组传到右边的数组
+  		}
+  	}
+
+	return quikSort(left).concat([numValue],quikSort(right));
+};
+```
