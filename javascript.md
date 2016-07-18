@@ -81,7 +81,7 @@ function spacify(str){
     }
   };
 ```
-内容来自[译](http://www.jackpu.com/-pian-fei-chang-bu-cuo-de-qian-duan-mian-shi-wen-zhang/)
+以上内容来自[译](http://www.jackpu.com/-pian-fei-chang-bu-cuo-de-qian-duan-mian-shi-wen-zhang/)
   
 4.快速排序
 ```
